@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "timestamp-dimension"
+version = "0.1.0"
+description = "Generate timestamp dimension table for data lake"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.0.0"
+pytz = "^2023.3"
+holidays = "^0.34"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.0.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

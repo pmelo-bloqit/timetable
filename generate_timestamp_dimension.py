@@ -25,7 +25,8 @@ COUNTRIES = {
     'FR': {'name': 'France', 'timezone': 'Europe/Paris'},
     'ES': {'name': 'Spain', 'timezone': 'Europe/Madrid'},
     'DE': {'name': 'Germany', 'timezone': 'Europe/Berlin'},
-    'IT': {'name': 'Italy', 'timezone': 'Europe/Rome'}
+    'IT': {'name': 'Italy', 'timezone': 'Europe/Rome'},
+    'IN': {'name': 'India', 'timezone': 'Asia/Kolkata'}
 }
 
 # Working hours (9 AM to 6 PM local time)
@@ -80,7 +81,7 @@ def is_daylight_saving(utc_timestamp: datetime, timezone_str: str) -> bool:
     return bool(local_time.dst())
 
 
-def generate_dimension_table(start_date: str = '2022-01-01', end_date: str = '2026-12-31') -> pd.DataFrame:
+def generate_dimension_table(start_date: str = '2022-01-01', end_date: str = '2030-12-31') -> pd.DataFrame:
     """Generate the complete timestamp dimension table."""
     
     print(f"Generating timestamp dimension table from {start_date} to {end_date}...")
